@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10141c">
+  <meta name="description" content="A local-first cybersecurity learning playground with safe browser-based demonstrations.">
+  <title>CyberPlayground | Safe Security Labs</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="module" src="assets/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="CyberPlayground home"><span class="brand-mark">C</span><span>CYBER<span class="accent">PLAYGROUND</span></span></a>
+    <span class="local-pill"><span></span> LOCAL LABS</span>
+  </header>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">LEARN · EXPERIMENT · UNDERSTAND</p>
+      <h1>Security concepts.<br><span>Hands-on, safely.</span></h1>
+      <p class="intro">Small interactive labs that run in your browser. No scanning, no external targets, no data leaving this page.</p>
+      <div class="hero-meta"><span>03 INTERACTIVE LABS</span><span>ZERO DEPENDENCIES</span><span>OFFLINE FRIENDLY</span></div>
+    </section>
+
+    <section class="lab-grid" aria-label="Learning labs">
+      <article class="lab-card">
+        <div class="card-top"><span class="number">01</span><span class="tag">DEFENSIVE WEB</span></div>
+        <h2>HTTP header review</h2>
+        <p>Inspect a sample response-header block and learn what common browser security headers do.</p>
+        <label for="headers-input">Response headers</label>
+        <textarea id="headers-input" rows="8" spellcheck="false">HTTP/2 200
+content-type: text/html; charset=utf-8
+strict-transport-security: max-age=31536000
+content-security-policy: default-src 'self'; frame-ancestors 'none'
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin</textarea>
+        <button id="headers-run" type="button">Analyze headers <span>↗</span></button>
+        <div id="headers-output" class="output" aria-live="polite"><p class="muted">Run the analysis to see findings.</p></div>
+      </article>
+
+      <article class="lab-card">
+        <div class="card-top"><span class="number">02</span><span class="tag">AUTHENTICATION</span></div>
+        <h2>Password entropy explorer</h2>
+        <p>Explore how length and character variety affect a theoretical search space. Your input stays in this page.</p>
+        <label for="password-input">Example text <span class="label-note">Do not enter a real password</span></label>
+        <input id="password-input" type="text" autocomplete="off" spellcheck="false" placeholder="Try a made-up example">
+        <div class="meter"><div id="entropy-meter"></div></div>
+        <div class="metric-row"><span>Estimated entropy</span><strong id="entropy-value">0 bits</strong></div>
+        <div id="entropy-guidance" class="output" aria-live="polite"><p class="muted">Enter a synthetic example to explore the estimate.</p></div>
+        <p class="fineprint">Educational estimate only. Real password strength also depends on uniqueness, breaches, reuse, and password-manager practices.</p>
+      </article>
+
+      <article class="lab-card">
+        <div class="card-top"><span class="number">03</span><span class="tag">SECURE CODING</span></div>
+        <h2>Input handling demo</h2>
+        <p>Compare treating input as text with treating it as markup. The demonstration never executes supplied input.</p>
+        <label for="input-demo">Sample untrusted input</label>
+        <input id="input-demo" type="text" value="<img src=x onerror=alert(1)>">
+        <button id="input-run" type="button">Compare handling <span>↗</span></button>
+        <div class="compare">
+          <div><span class="mini-label">SAFE TEXT OUTPUT</span><pre id="safe-output" class="safe-preview">Your text appears here as text.</pre></div>
+          <div><span class="mini-label">WHY UNSAFE HTML IS RISKY</span><p class="risk-note">Inserting untrusted strings as HTML can create executable markup. Prefer textContent or context-aware output encoding.</p></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="principles">
+      <div><p class="eyebrow">LAB RULES</p><h2>Curiosity with guardrails.</h2></div>
+      <ul><li>Use synthetic examples, never real credentials.</li><li>Only assess systems you own or have explicit permission to test.</li><li>Understand the limitation before trusting a result.</li></ul>
+    </section>
+  </main>
+  <footer><span>CYBERPLAYGROUND / 2026</span><span>LOCAL-FIRST · NO TRACKING · NO EXTERNAL REQUESTS</span></footer>
+</body>
+</html>
