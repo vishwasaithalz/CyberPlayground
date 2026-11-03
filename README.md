@@ -10,7 +10,7 @@
 
 <p align="center"><strong>A hands-on browser playground for understanding defensive web security concepts.</strong></p>
 
-<p align="center">[Labs](#-the-labs) · [Run locally](#-run-locally) · [Safety model](#-safety-model) · [Roadmap](#-roadmap)</p>
+<p align="center">[Labs](#-the-labs) · [Run locally](#-run-locally) · [Safety model](#-safety-model) · [Live demo](https://cyber-playground-nu.vercel.app/) · [Roadmap](#-roadmap)</p>
 
 ## 🧪 The labs
 
@@ -21,6 +21,10 @@ CyberPlayground is a small static site. Each exercise runs locally in your brows
 | HTTP security headers | Recognise common browser security headers | Analyses pasted text only |
 | Password entropy concepts | Understand character pools and rough entropy estimates | Never enter a real password |
 | Input handling | Compare safe text rendering with unsafe HTML handling | Demonstration does not execute supplied input |
+
+## 🌐 Live demo
+
+[Open CyberPlayground on Vercel](https://cyber-playground-nu.vercel.app/). This production deployment was built from this repository's `main` branch and verified READY on Vercel.
 
 ## ⚡ Run locally
 
@@ -68,7 +72,7 @@ tests/app.test.js   Automated tests
 - [ ] Add guided learning paths and clearer explanations for each finding.
 - [ ] Add more defensive browser-security exercises.
 - [ ] Improve accessibility and keyboard navigation.
-- [ ] Add a hosted demo after a deployment review.
+- [x] Deploy the GitHub `main` branch to the existing Vercel Cyber Playground project.
 
 ## 🤝 Contributing
 
