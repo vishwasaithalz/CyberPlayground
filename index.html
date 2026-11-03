@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#10141c">
+  <meta name="theme-color" content="#f3f4f6">
   <meta name="description" content="A local-first cybersecurity learning playground with safe browser-based demonstrations.">
   <title>CyberPlayground | Safe Security Labs</title>
   <link rel="stylesheet" href="assets/styles.css">
@@ -11,19 +11,25 @@
 </head>
 <body>
   <header class="topbar">
+    <div class="topbar-inner">
     <a class="brand" href="#" aria-label="CyberPlayground home"><span class="brand-mark">C</span><span>CYBER<span class="accent">PLAYGROUND</span></span></a>
-    <span class="local-pill"><span></span> LOCAL LABS</span>
+    <nav class="header-links" aria-label="Site links"><a href="#workspace">Workspace</a><a href="#guidelines">Guidelines</a><a href="https://github.com/vishwasaithalz/CyberPlayground" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+    </div>
   </header>
   <main class="shell">
+    <div class="breadcrumb">CYBERPLAYGROUND <span>/</span> LEARNING WORKSPACE <span class="breadcrumb-right">EDITION 2026.11</span></div>
     <section class="hero">
-      <p class="eyebrow">LEARN · EXPERIMENT · UNDERSTAND</p>
-      <h1>Security concepts.<br><span>Hands-on, safely.</span></h1>
-      <p class="intro">Small interactive labs that run in your browser. No scanning, no external targets, no data leaving this page.</p>
-      <div class="hero-meta"><span>03 INTERACTIVE LABS</span><span>ZERO DEPENDENCIES</span><span>OFFLINE FRIENDLY</span></div>
+      <p class="eyebrow"><span class="status-dot"></span> INTERACTIVE LEARNING ENVIRONMENT</p>
+      <h1>Understand security.<br><span>Practice the fundamentals.</span></h1>
+      <p class="intro">A practical workspace for exploring web security concepts. Work through focused exercises, inspect the results and understand the reasoning behind each finding.</p>
+      <div class="hero-meta"><span><b>03</b> practical exercises</span><span><b>100%</b> browser-based</span><span><b>00</b> external targets</span></div>
     </section>
 
-    <section class="lab-grid" aria-label="Learning labs">
-      <article class="lab-card">
+    <section id="workspace" class="workspace" aria-label="Learning workspace">
+      <aside class="workspace-sidebar" aria-label="Exercise navigation"><p class="sidebar-heading">WORKSPACE</p><p class="sidebar-caption">Learning modules</p><div class="module-list" role="tablist" aria-label="Choose exercise"><button class="module-tab" type="button" role="tab" id="tab-headers" aria-controls="panel-headers" aria-selected="true" tabindex="0" data-panel="panel-headers"><span class="module-icon">01</span><span><strong>HTTP headers</strong><small>Web fundamentals</small></span></button><button class="module-tab" type="button" role="tab" id="tab-entropy" aria-controls="panel-entropy" aria-selected="false" tabindex="-1" data-panel="panel-entropy"><span class="module-icon">02</span><span><strong>Password entropy</strong><small>Authentication</small></span></button><button class="module-tab" type="button" role="tab" id="tab-input" aria-controls="panel-input" aria-selected="false" tabindex="-1" data-panel="panel-input"><span class="module-icon">03</span><span><strong>Input handling</strong><small>Secure development</small></span></button></div><div class="sidebar-note"><strong>Private by design</strong><p>Examples run locally in this browser. Never enter real credentials or sensitive data.</p></div></aside>
+      <div class="workspace-main"><div class="workspace-toolbar"><div><span class="toolbar-kicker">PRACTICAL EXERCISES</span><h2>Lab workspace</h2></div><span class="workspace-status"><span class="status-dot"></span> LOCAL SESSION</span></div>
+      <div class="lab-grid" aria-label="Exercise panels">
+      <article class="lab-card" role="tabpanel" id="panel-headers" aria-labelledby="tab-headers" tabindex="0">
         <div class="card-top"><span class="number">01</span><span class="tag">DEFENSIVE WEB</span></div>
         <h2>HTTP header review</h2>
         <p>Inspect a sample response-header block and learn what common browser security headers do.</p>
@@ -38,7 +44,7 @@ referrer-policy: strict-origin-when-cross-origin</textarea>
         <div id="headers-output" class="output" aria-live="polite"><p class="muted">Run the analysis to see findings.</p></div>
       </article>
 
-      <article class="lab-card">
+      <article class="lab-card" role="tabpanel" id="panel-entropy" aria-labelledby="tab-entropy" tabindex="0" hidden>
         <div class="card-top"><span class="number">02</span><span class="tag">AUTHENTICATION</span></div>
         <h2>Password entropy explorer</h2>
         <p>Explore how length and character variety affect a theoretical search space. Your input stays in this page.</p>
@@ -50,7 +56,7 @@ referrer-policy: strict-origin-when-cross-origin</textarea>
         <p class="fineprint">Educational estimate only. Real password strength also depends on uniqueness, breaches, reuse, and password-manager practices.</p>
       </article>
 
-      <article class="lab-card">
+      <article class="lab-card" role="tabpanel" id="panel-input" aria-labelledby="tab-input" tabindex="0" hidden>
         <div class="card-top"><span class="number">03</span><span class="tag">SECURE CODING</span></div>
         <h2>Input handling demo</h2>
         <p>Compare treating input as text with treating it as markup. The demonstration never executes supplied input.</p>
@@ -62,13 +68,14 @@ referrer-policy: strict-origin-when-cross-origin</textarea>
           <div><span class="mini-label">WHY UNSAFE HTML IS RISKY</span><p class="risk-note">Inserting untrusted strings as HTML can create executable markup. Prefer textContent or context-aware output encoding.</p></div>
         </div>
       </article>
+      </div></div>
     </section>
 
-    <section class="principles">
-      <div><p class="eyebrow">LAB RULES</p><h2>Curiosity with guardrails.</h2></div>
+    <section id="guidelines" class="principles">
+      <div><p class="eyebrow">GOOD PRACTICE</p><h2>Learn with clear boundaries.</h2></div>
       <ul><li>Use synthetic examples, never real credentials.</li><li>Only assess systems you own or have explicit permission to test.</li><li>Understand the limitation before trusting a result.</li></ul>
     </section>
   </main>
-  <footer><span>CYBERPLAYGROUND / 2026</span><span>LOCAL-FIRST · NO TRACKING · NO EXTERNAL REQUESTS</span></footer>
+  <footer><span>© 2026 CyberPlayground · A practical security learning environment</span><a href="https://github.com/vishwasaithalz/CyberPlayground" target="_blank" rel="noopener noreferrer">Source on GitHub ↗</a></footer>
 </body>
 </html>
