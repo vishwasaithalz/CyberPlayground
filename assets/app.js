@@ -41,6 +41,26 @@ function element(tag, className, text) {
 }
 
 function init() {
+  const themeToggle = document.querySelector("#theme-toggle");
+  const applyTheme = (theme) => {
+    document.documentElement.dataset.theme = theme;
+    if (themeToggle) {
+      const dark = theme === "dark";
+      themeToggle.textContent = dark ? "☀ Light mode" : "☾ Dark mode";
+      themeToggle.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+      themeToggle.setAttribute("aria-pressed", String(dark));
+    }
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    if (themeMeta) themeMeta.content = theme === "dark" ? "#141c27" : "#f3f4f6";
+  };
+  let preferredTheme = "dark";
+  try { preferredTheme = localStorage.getItem("cyberplayground-theme") === "light" ? "light" : "dark"; } catch (_) { /* Private mode may restrict storage. */ }
+  applyTheme(preferredTheme);
+  if (themeToggle) themeToggle.addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    applyTheme(next);
+    try { localStorage.setItem("cyberplayground-theme", next); } catch (_) { /* Theme still works in memory. */ }
+  });
   const tabs = [...document.querySelectorAll(".module-tab")];
   const selectTab = (selected, moveFocus = false) => {
     for (const tab of tabs) {
