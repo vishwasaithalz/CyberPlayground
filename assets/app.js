@@ -41,6 +41,26 @@ function element(tag, className, text) {
 }
 
 function init() {
+  const tabs = [...document.querySelectorAll(".module-tab")];
+  const selectTab = (selected, moveFocus = false) => {
+    for (const tab of tabs) {
+      const active = tab === selected;
+      tab.setAttribute("aria-selected", String(active));
+      tab.tabIndex = active ? 0 : -1;
+      const panel = document.getElementById(tab.dataset.panel);
+      if (panel) panel.hidden = !active;
+    }
+    if (moveFocus) selected.focus();
+  };
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => selectTab(tab));
+    tab.addEventListener("keydown", event => {
+      if (!["ArrowRight", "ArrowLeft", "Home", "End"].includes(event.key)) return;
+      event.preventDefault();
+      const next = event.key === "Home" ? 0 : event.key === "End" ? tabs.length - 1 : (index + (event.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
+      selectTab(tabs[next], true);
+    });
+  });
   const headerInput = document.querySelector("#headers-input");
   const headerRun = document.querySelector("#headers-run");
   const headerOutput = document.querySelector("#headers-output");
