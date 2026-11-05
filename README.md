@@ -97,3 +97,8 @@ Suggestions should include the learning objective, safe boundaries, and a reprod
 <!-- KARMA ANIMATED SIGNAL -->
 <p align="center"><img src="assets/karma-signal.svg" alt="CyberPlayground animated signal graphic" width="100%" /></p>
 <details><summary><strong>🎛 Explore the interactive KARMA universe</strong></summary><p><a href="https://karma-ops-monitor.vercel.app">Launch the music-enabled KARMA homepage</a>. Sound is user-controlled. Motion can be reduced.</p></details>
+
+
+<!-- KARMA AVATAR GALLERY -->
+<p align="center"><img src="assets/karma-avatar.svg" width="112" alt="CyberPlayground original illustrated animated avatar" /></p>
+<p align="center"><a href="https://karma-ops-monitor.vercel.app/#gallery">Explore the animated project gallery</a></p>
