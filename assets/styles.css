@@ -61,3 +61,19 @@ html[data-theme="dark"] .meter div{background:#83a9cc}
 html[data-theme="dark"] .risk-note{background:#273748;border-color:#4b657c;color:#d7e4ef}
 html[data-theme="dark"] footer{color:#a0b2c3}
 @media(max-width:650px){.theme-toggle{min-height:34px;font-size:11px;padding:6px 9px}.header-links{gap:8px}}
+
+/* Guided learning path */
+.learning-path{margin:0 0 28px;padding:24px;background:#fff;border:1px solid #d9e0e7;border-radius:11px;box-shadow:0 8px 32px #263a4d0b}
+.path-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:18px}
+.path-heading .eyebrow{margin:0;font-size:10px}.path-heading h2{font-size:23px;letter-spacing:-.035em;margin:7px 0}.path-heading p:not(.eyebrow){margin:0;color:#687789;font-size:13px;max-width:650px}
+.path-progress{min-width:145px;display:grid;gap:4px}.path-progress strong{font:750 20px Consolas,monospace;color:#294e73}.path-progress span{font-size:10px;color:#7d8b99}.path-meter{height:6px;background:#e7edf2;border-radius:99px;overflow:hidden;margin-top:5px}.path-meter span{display:block;width:0;height:100%;background:#4b7ca6;transition:width .2s}
+.path-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.path-step{display:grid;grid-template-columns:20px 1fr;align-items:start;gap:8px;padding:14px;border:1px solid #dce3e9;border-radius:7px;background:#fbfcfd;cursor:pointer}.path-step input{width:16px;height:16px;min-height:0;margin:2px 0 0;accent-color:#426f96}.path-step .step-index{grid-column:1;grid-row:2;font:750 11px Consolas,monospace;color:#527493}.path-step>span:nth-of-type(2){grid-column:2}.path-step strong,.path-step small{display:block}.path-step strong{font-size:12px;color:#304b63}.path-step small{font-size:11px;color:#788796;line-height:1.5;margin-top:4px}.path-step a{grid-column:2;justify-self:start;font-size:11px;font-weight:700;color:#315f87;text-decoration:none;margin-top:8px}.path-step a:hover{text-decoration:underline}.path-footnote{margin:14px 0 0;color:#82909d;font-size:10px}
+html[data-theme="dark"] .learning-path{background:#1c2633;border-color:#344456;box-shadow:0 10px 34px #050b1240}
+html[data-theme="dark"] .path-heading p:not(.eyebrow),html[data-theme="dark"] .path-progress span,html[data-theme="dark"] .path-footnote{color:#a9bac9}
+html[data-theme="dark"] .path-progress strong{color:#d7e6f3}
+html[data-theme="dark"] .path-meter{background:#344456}
+html[data-theme="dark"] .path-step{background:#202c39;border-color:#40566a}
+html[data-theme="dark"] .path-step strong{color:#e1eaf2}
+html[data-theme="dark"] .path-step small{color:#a9bac9}
+html[data-theme="dark"] .path-step a{color:#a5c4df}
+@media(max-width:760px){.path-heading{align-items:flex-start;flex-direction:column;gap:12px}.path-progress{width:100%;grid-template-columns:auto 1fr;align-items:center}.path-meter{grid-column:1/-1}.path-steps{grid-template-columns:1fr}}
