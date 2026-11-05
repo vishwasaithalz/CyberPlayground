@@ -61,6 +61,26 @@ function init() {
     applyTheme(next);
     try { localStorage.setItem("cyberplayground-theme", next); } catch (_) { /* Theme still works in memory. */ }
   });
+  const pathChecks = [...document.querySelectorAll("[data-path-step]")];
+  const pathCount = document.querySelector("#path-count");
+  const pathMeter = document.querySelector("#path-meter-fill");
+  const refreshPath = () => {
+    const done = pathChecks.filter(check => check.checked).length;
+    if (pathCount) pathCount.textContent = done + " / " + pathChecks.length;
+    if (pathMeter) pathMeter.style.width = (pathChecks.length ? done / pathChecks.length * 100 : 0) + "%";
+  };
+  try {
+    const saved = JSON.parse(localStorage.getItem("cyberplayground-learning-path") || "[]");
+    pathChecks.forEach(check => { check.checked = Array.isArray(saved) && saved.includes(check.dataset.pathStep); });
+  } catch (_) { /* Progress remains usable for this session if storage is blocked. */ }
+  pathChecks.forEach(check => check.addEventListener("change", () => {
+    refreshPath();
+    try {
+      localStorage.setItem("cyberplayground-learning-path", JSON.stringify(pathChecks.filter(item => item.checked).map(item => item.dataset.pathStep)));
+    } catch (_) { /* Keep the current session state even when persistence is unavailable. */ }
+  }));
+  refreshPath();
+
   const tabs = [...document.querySelectorAll(".module-tab")];
   const selectTab = (selected, moveFocus = false) => {
     for (const tab of tabs) {
@@ -72,6 +92,10 @@ function init() {
     }
     if (moveFocus) selected.focus();
   };
+  document.querySelectorAll("[data-open-panel]").forEach(link => link.addEventListener("click", () => {
+    const target = document.querySelector('[data-panel="' + link.dataset.openPanel + '"]');
+    if (target) selectTab(target);
+  }));
   tabs.forEach((tab, index) => {
     tab.addEventListener("click", () => selectTab(tab));
     tab.addEventListener("keydown", event => {
