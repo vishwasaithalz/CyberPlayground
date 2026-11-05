@@ -1,3 +1,9 @@
+export function calculateLearningProgress(completed, total) {
+  const count = Math.max(0, Math.min(Number(total) || 0, Array.isArray(completed) ? completed.length : 0));
+  const maximum = Math.max(0, Number(total) || 0);
+  return { completed: count, total: maximum, percent: maximum ? Math.round(count / maximum * 100) : 0 };
+}
+
 export function analyzeHeaders(text) {
   const headers = {};
   for (const line of String(text).split(/\r?\n/)) {
@@ -65,9 +71,9 @@ function init() {
   const pathCount = document.querySelector("#path-count");
   const pathMeter = document.querySelector("#path-meter-fill");
   const refreshPath = () => {
-    const done = pathChecks.filter(check => check.checked).length;
-    if (pathCount) pathCount.textContent = done + " / " + pathChecks.length;
-    if (pathMeter) pathMeter.style.width = (pathChecks.length ? done / pathChecks.length * 100 : 0) + "%";
+    const progress = calculateLearningProgress(pathChecks.filter(check => check.checked), pathChecks.length);
+    if (pathCount) pathCount.textContent = progress.completed + " / " + progress.total;
+    if (pathMeter) pathMeter.style.width = progress.percent + "%";
   };
   try {
     const saved = JSON.parse(localStorage.getItem("cyberplayground-learning-path") || "[]");
