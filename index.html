@@ -25,6 +25,19 @@
       <div class="hero-meta"><span><b>03</b> practical exercises</span><span><b>100%</b> browser-based</span><span><b>00</b> external targets</span></div>
     </section>
 
+    <section class="learning-path" id="learning-path" aria-labelledby="path-title">
+      <div class="path-heading">
+        <div><p class="eyebrow">GUIDED ROUTE · BEGINNER FRIENDLY</p><h2 id="path-title">Your first security learning path</h2><p>Three short checkpoints turn the labs into a practical sequence. Progress is saved only in this browser.</p></div>
+        <div class="path-progress" aria-live="polite"><strong id="path-count">0 / 3</strong><span>checkpoints complete</span><div class="path-meter"><span id="path-meter-fill"></span></div></div>
+      </div>
+      <div class="path-steps">
+        <label class="path-step"><input type="checkbox" data-path-step="headers"><span class="step-index">01</span><span><strong>Read a response</strong><small>Open HTTP headers and identify three defensive controls.</small></span><a href="#workspace" data-open-panel="panel-headers">Open lab ↗</a></label>
+        <label class="path-step"><input type="checkbox" data-path-step="entropy"><span class="step-index">02</span><span><strong>Understand authentication</strong><small>Use a fictional sample to explore length and character variety.</small></span><a href="#workspace" data-open-panel="panel-entropy">Open lab ↗</a></label>
+        <label class="path-step"><input type="checkbox" data-path-step="input"><span class="step-index">03</span><span><strong>Handle untrusted input</strong><small>Compare safe text rendering with the risks of HTML insertion.</small></span><a href="#workspace" data-open-panel="panel-input">Open lab ↗</a></label>
+      </div>
+      <p class="path-footnote">This checklist records learning progress, not a security certification. Avoid real passwords, secrets, tokens and customer data.</p>
+    </section>
+
     <section id="workspace" class="workspace" aria-label="Learning workspace">
       <aside class="workspace-sidebar" aria-label="Exercise navigation"><p class="sidebar-heading">WORKSPACE</p><p class="sidebar-caption">Learning modules</p><div class="module-list" role="tablist" aria-label="Choose exercise"><button class="module-tab" type="button" role="tab" id="tab-headers" aria-controls="panel-headers" aria-selected="true" tabindex="0" data-panel="panel-headers"><span class="module-icon">01</span><span><strong>HTTP headers</strong><small>Web fundamentals</small></span></button><button class="module-tab" type="button" role="tab" id="tab-entropy" aria-controls="panel-entropy" aria-selected="false" tabindex="-1" data-panel="panel-entropy"><span class="module-icon">02</span><span><strong>Password entropy</strong><small>Authentication</small></span></button><button class="module-tab" type="button" role="tab" id="tab-input" aria-controls="panel-input" aria-selected="false" tabindex="-1" data-panel="panel-input"><span class="module-icon">03</span><span><strong>Input handling</strong><small>Secure development</small></span></button></div><div class="sidebar-note"><strong>Private by design</strong><p>Examples run locally in this browser. Never enter real credentials or sensitive data.</p></div></aside>
       <div class="workspace-main"><div class="workspace-toolbar"><div><span class="toolbar-kicker">PRACTICAL EXERCISES</span><h2>Lab workspace</h2></div><span class="workspace-status"><span class="status-dot"></span> LOCAL SESSION</span></div>
