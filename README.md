@@ -10,7 +10,7 @@
 
 <p align="center"><strong>A hands-on browser playground for understanding defensive web security concepts.</strong></p>
 
-<p align="center">[Labs](#-the-labs) · [Run locally](#-run-locally) · [Safety model](#-safety-model) · [Live demo](https://cyber-playground-nu.vercel.app/) · [Roadmap](#-roadmap)</p>
+<p align="center"><a href="#-the-labs">Labs</a> · <a href="#-run-locally">Run locally</a> · <a href="#-safety-model">Safety model</a> · <a href="https://cyber-playground-nu.vercel.app/">Live demo</a> · <a href="#-roadmap">Roadmap</a></p>
 
 ## 🧪 The labs
 
