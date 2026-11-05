@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CyberPlayground | Safe DOM Lab</title>
+<style>body{background:#0e1726;color:#e2e8f0;font:16px system-ui;margin:auto;max-width:780px;padding:3rem 1rem}main{background:#182537;padding:2rem;border-radius:18px}input,button{padding:12px;border-radius:8px;font:inherit}input{width:min(90%,520px)}button{background:#5eead4;border:0;cursor:pointer}output{display:block;margin:1rem 0;padding:1rem;background:#0b1220;border-radius:8px;min-height:24px}a{color:#5eead4}</style></head>
+<body><main><p><a href="../index.html">Back to CyberPlayground</a></p><h1>Safe DOM Rendering Lab</h1><p>Learn why user-controlled text belongs in <code>textContent</code>, not an HTML parser. This exercise never executes input.</p>
+<label for="payload">Enter sample text, including HTML-like characters</label><p><input id="payload" value="&lt;img src=x onerror=alert(1)&gt;"></p><button id="render">Render as text</button><h2>Safe output</h2><output id="result" aria-live="polite"></output><p id="lesson">The characters are displayed literally, not interpreted as markup.</p></main>
+<script>document.getElementById('render').addEventListener('click',()=>{document.getElementById('result').textContent=document.getElementById('payload').value})</script></body></html>
