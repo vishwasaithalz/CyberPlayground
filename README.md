@@ -79,3 +79,16 @@ tests/app.test.js   Automated tests
 Suggestions should include the learning objective, safe boundaries, and a reproducible example. See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
 
 <p align="center"><sub>Learn the mechanics. Respect the boundaries. Build safer software.</sub></p>
+
+
+<!-- KARMA VISUAL IDENTITY: START -->
+<div align="center">
+
+**SECURITY EDUCATION / LABS**
+
+<img src="https://img.shields.io/badge/KARMA-SYSTEMS-0f172a?style=for-the-badge" alt="KARMA Systems" /> <img src="https://img.shields.io/badge/BUILD-VERIFY-0f766e?style=for-the-badge" alt="Build and verify" />
+
+<sub>Designed for clarity. Built for evidence. No invented status metrics.</sub>
+
+</div>
+<!-- KARMA VISUAL IDENTITY: END -->
