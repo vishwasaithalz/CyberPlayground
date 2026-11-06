@@ -1,8 +1,14 @@
-<!-- KARMA PROJECT IDENTITY / original art -->
-<p align="center"><img src="https://raw.githubusercontent.com/vishwasaithalz/vishwasaithalz/main/assets/projects/cyberplayground-v2.svg" alt="🎮 CyberPlayground: Safe interactive security learning" width="100%" /></p>
+<!-- KARMA PROJECT IDENTITY / compact visual navigation -->
+<p align="center"><a href="https://cyber-playground-nu.vercel.app"><img src="https://raw.githubusercontent.com/vishwasaithalz/vishwasaithalz/main/assets/tiles/cyberplayground.svg" width="68%" alt="Open 🎮 CyberPlayground project" /></a></p>
 <p align="center"><strong>🎮 CyberPlayground</strong> · Safe interactive security learning</p>
+<p align="center">
+<a href="https://vishwasaithalz.github.io/vishwasaithalz/arcade/#snake"><img src="https://raw.githubusercontent.com/vishwasaithalz/vishwasaithalz/main/assets/nav/arcade.svg" width="46%" alt="Play the related security arcade" /></a>
+<a href="https://karma-ops-monitor.vercel.app"><img src="https://raw.githubusercontent.com/vishwasaithalz/vishwasaithalz/main/assets/nav/portfolio.svg" width="46%" alt="Explore the live portfolio" /></a>
+</p>
 
-<p align="center"><img src="assets/cyberplayground-hero.svg" alt="CyberPlayground custom project artwork" width="100%" /></p>
+<details><summary>🎨 Open original full-size project artwork</summary>
+<p align="center"><img src="assets/cyberplayground-hero.svg" alt="CyberPlayground custom project artwork" width="90%" /></p>
+</details>
 
 <p align="center">
   <a href="https://github.com/vishwasaithalz/CyberPlayground/actions/workflows/tests.yml"><img src="https://github.com/vishwasaithalz/CyberPlayground/actions/workflows/tests.yml/badge.svg" alt="CyberPlayground tests" /></a>
