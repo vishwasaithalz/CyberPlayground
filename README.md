@@ -1,3 +1,7 @@
+<!-- KARMA PROJECT IDENTITY / original art -->
+<p align="center"><img src="https://raw.githubusercontent.com/vishwasaithalz/vishwasaithalz/main/assets/projects/cyberplayground-v2.svg" alt="🎮 CyberPlayground: Safe interactive security learning" width="100%" /></p>
+<p align="center"><strong>🎮 CyberPlayground</strong> · Safe interactive security learning</p>
+
 <p align="center"><img src="assets/cyberplayground-hero.svg" alt="CyberPlayground custom project artwork" width="100%" /></p>
 
 <p align="center">
