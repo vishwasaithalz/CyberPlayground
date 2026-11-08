@@ -1,20 +1,17 @@
 <!-- VISHWAS.EXE UNIFIED THEME START -->
-<p align="center"><a href="https://cyber-playground-nu.vercel.app"><img src="https://raw.githubusercontent.com/vishwasaithalz/vishwasaithalz/main/assets/brand/vishwas-exe-cyberplayground.svg" width="100%" alt="VISHWAS.EXE uniform retro GitHub interface for CyberPlayground, created by Vishwas Aithal" /></a></p>
-<p align="center"><strong>VISHWAS.EXE / CyberPlayground</strong><br/>Browser-based security education<br/><sub>Designed and built by <strong>Vishwas Aithal</strong> · Same computer universe, its own personality</sub></p>
-<p align="center">
-  <a href="https://vishwasaithalz.github.io/vishwasaithalz/"><strong>💾 BOOT MANAGER</strong></a> &nbsp;·&nbsp;
-  <a href="https://vishwasaithalz.github.io/vishwasaithalz/overload/"><strong>🖥️ OVERLOAD OS</strong></a> &nbsp;·&nbsp;
-  <a href="https://vishwasaithalz.github.io/vishwasaithalz/arcade/"><strong>🎮 ARCADE</strong></a> &nbsp;·&nbsp;
-  <a href="https://github.com/vishwasaithalz?tab=repositories"><strong>📁 ALL PROJECTS</strong></a> &nbsp;·&nbsp;
-  <a href="https://vishwasaithal.ai.studio/"><strong>🌐 PORTFOLIO</strong></a>
-</p>
+<p align="center"><a href="https://cyber-playground-nu.vercel.app"><img src="https://raw.githubusercontent.com/vishwasaithalz/vishwasaithalz/main/assets/brand/vishwas-exe-cyberplayground.svg" width="100%" alt="CyberPlayground. Original editorial illustration by Vishwas Aithal." /></a></p>
+
+<p align="center"><a href="https://vishwasaithalz.github.io/vishwasaithalz/">Personal index</a> &nbsp;·&nbsp; <a href="https://github.com/vishwasaithalz?tab=repositories">All projects</a> &nbsp;·&nbsp; <a href="https://vishwasaithal.ai.studio/">Portfolio</a></p>
 <!-- VISHWAS.EXE UNIFIED THEME END -->
 
 <details>
-<summary><strong>🎞 Open legacy project visuals and original navigation</strong></summary>
+<summary>Earlier artwork and navigation</summary>
 
 <p align="center"><a href="https://cyber-playground-nu.vercel.app"><img src="https://raw.githubusercontent.com/vishwasaithalz/vishwasaithalz/main/assets/tiles/cyberplayground.svg" width="68%" alt="Open 🎮 CyberPlayground project" /></a></p>
 <p align="center"><strong>🎮 CyberPlayground</strong> · Safe interactive security learning</p>
+<details>
+<summary>Build and technology badges</summary>
+
 <p align="center">
 <a href="https://vishwasaithalz.github.io/vishwasaithalz/arcade/#snake"><img src="https://raw.githubusercontent.com/vishwasaithalz/vishwasaithalz/main/assets/nav/arcade.svg" width="46%" alt="Play the related security arcade" /></a>
 <a href="https://karma-ops-monitor.vercel.app"><img src="https://raw.githubusercontent.com/vishwasaithalz/vishwasaithalz/main/assets/nav/portfolio.svg" width="46%" alt="Explore the live portfolio" /></a>
@@ -33,6 +30,7 @@
   <img src="https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=flat-square&logo=javascript&logoColor=111827" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Network%20access-None-0f766e?style=flat-square" alt="No network access" />
 </p>
+</details>
 
 <p align="center"><strong>A hands-on browser playground for understanding defensive web security concepts.</strong></p>
 
