@@ -96,7 +96,7 @@ Suggestions should include the learning objective, safe boundaries, and a reprod
 
 **SECURITY EDUCATION / LABS**
 
-<img src="https://img.shields.io/badge/KARMA-SYSTEMS-0f172a?style=for-the-badge" alt="KARMA Systems" /> <img src="https://img.shields.io/badge/BUILD-VERIFY-0f766e?style=for-the-badge" alt="Build and verify" />
+<img src="https://img.shields.io/badge/Vishwas_Aithal-SYSTEMS-0f172a?style=for-the-badge" alt="Vishwas Aithal Systems" /> <img src="https://img.shields.io/badge/BUILD-VERIFY-0f766e?style=for-the-badge" alt="Build and verify" />
 
 <sub>Designed for clarity. Built for evidence. No invented status metrics.</sub>
 
@@ -106,7 +106,7 @@ Suggestions should include the learning objective, safe boundaries, and a reprod
 
 <!-- KARMA ANIMATED SIGNAL -->
 <p align="center"><img src="assets/karma-signal.svg" alt="CyberPlayground animated signal graphic" width="100%" /></p>
-<details><summary><strong>🎛 Explore the interactive KARMA universe</strong></summary><p><a href="https://karma-ops-monitor.vercel.app">Launch the music-enabled KARMA homepage</a>. Sound is user-controlled. Motion can be reduced.</p></details>
+<details><summary><strong>🎛 Explore the interactive Vishwas Aithal universe</strong></summary><p><a href="https://karma-ops-monitor.vercel.app">Launch the music-enabled Vishwas Aithal homepage</a>. Sound is user-controlled. Motion can be reduced.</p></details>
 
 
 <!-- KARMA AVATAR GALLERY -->
