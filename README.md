@@ -46,7 +46,9 @@ CyberPlayground is a small static site. Each exercise runs locally in your brows
 |---|---|---|
 | HTTP security headers | Recognise common browser security headers | Analyses pasted text only |
 | Password entropy concepts | Understand character pools and rough entropy estimates | Never enter a real password |
-| Input handling | Compare safe text rendering with unsafe HTML handling | Demonstration does not execute supplied input |\n\nA three-checkpoint beginner learning path connects these labs in sequence. Completion is stored in browser local storage only and can be cleared by removing this site data.
+| Input handling | Compare safe text rendering with unsafe HTML handling | Demonstration does not execute supplied input |
+
+A three-checkpoint beginner learning path connects these labs in sequence. Completion is stored in browser local storage only and can be cleared by removing this site data.
 
 ## 🌐 Live demo
 
@@ -95,7 +97,8 @@ tests/app.test.js   Automated tests
 
 ## 🗺️ Roadmap
 
-- [x] Add a guided beginner learning path with local progress.\n- [ ] Add richer, standards-linked explanations for each finding.
+- [x] Add a guided beginner learning path with local progress.
+- [ ] Add richer, standards-linked explanations for each finding.
 - [ ] Add more defensive browser-security exercises.
 - [ ] Improve accessibility and keyboard navigation.
 - [x] Deploy the GitHub `main` branch to the existing Vercel Cyber Playground project.
